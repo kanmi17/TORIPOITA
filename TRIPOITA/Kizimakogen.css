@@ -1,0 +1,260 @@
+HTML{
+    height:100%
+}
+body {
+    height:100%;
+    margin: 0;
+    font-family: "ＭＳ 明朝";
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  /*--------------------
+ 吹き出しを作る
+--------------------*/
+.balloon {
+    margin-bottom: 2em;
+    position: relative;
+    }
+    .balloon:before,.balloon:after {
+    clear: both;
+    content: "";
+    display: block;
+    }
+    .balloon figure {
+    width: 60px;
+    height: 60px;
+    }
+    .balloon-image-left {
+    float: left;
+    margin-right: 20px;
+    }
+    .balloon-image-right {
+    float: right;
+    margin-left: 20px;
+    }
+    .balloon figure img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #aaa;
+    border-radius: 50%;
+    margin: 0;
+    }
+    .balloon-image-description {
+    padding: 5px 0 0;
+    font-size: 10px;
+    text-align: center;
+    }
+    .balloon-text-right,.balloon-text-left {
+    margin-top:30px;
+    position: relative;
+    padding: 10px;
+    border: 1px solid;
+    border-radius: 10px;
+    max-width: -webkit-calc(100% - 120px);
+    max-width: calc(100% - 120px);
+    display: inline-block;
+    }
+    .balloon-text-right {
+    border-color: #aaa;
+    }
+    .balloon-text-left {
+    border-color: #aaa;
+    }
+    .balloon-text-right {
+    float: left;
+    }
+    .balloon-text-left {
+    float: right;
+    }
+    .balloon p {
+    margin: 0 0 20px;
+    }
+    .balloon p:last-child {
+    margin-bottom: 0;
+    }
+    /* 三角部分 */
+    .balloon-text-right:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #aaa;
+    top: 15px;
+    left: -20px;
+    }
+    .balloon-text-right:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-right: 10px solid #fff;
+    top: 15px;
+    left: -19px;
+    }
+    .balloon-text-left:before {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #aaa;
+    top: 15px;
+    right: -20px;
+    }
+    .balloon-text-left:after {
+    position: absolute;
+    content: '';
+    border: 10px solid transparent;
+    border-left: 10px solid #fff;
+    top: 15px;
+    right: -19px;
+    }
+
+  header{
+    height:55px;
+    background-color:rgba(34, 49, 52, 0.9);
+  }
+  .header-right{
+    float: right;
+    width:auto;
+    padding-top:25px;
+    transition: all 0.5s;
+}
+.header-left{
+    float: left;
+    width:auto;
+    padding-top:10px;
+    transition: all 0.5s;
+}
+
+.header-left a {
+    line-height:45px;
+    padding-right:25px;
+    padding-left:25px;
+    color:white;
+    display:block;
+    font-style: bold;
+  }
+
+.header-right{
+    float: right;
+    width:auto;
+    padding-top:10px;
+    transition: all 0.5s;
+}
+
+.header-right a {
+    line-height:45px;
+    padding-right:25px;
+    padding-left:25px;
+    color:white;
+    display:block;
+  }
+.header-right:hover{
+    background-color:rgba(255, 255, 255, 0.5);
+  }
+  .top-wrapper{
+    /*トップのレイアウト*/
+    background-position: -30%;
+    background-image:url(Kizimakogen.jpg);
+    background-size:cover;
+    padding-top:180px;
+    padding-bottom:300px;
+    background-color:rgba(255,255,255,0.8);
+    background-blend-mode:lighten;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    /*ここからページ開いた瞬間にフェードイン*/
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+@keyframes fadein {
+from {
+    opacity: 0;
+    transform: translateY(20px);
+}
+to {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+  }
+    /*ここまでページ開いた瞬間にフェードイン*/
+.detail{
+    font-size:20px
+}
+    /*ここからスクロール＋フェードイン*/
+    .wrapper{
+        margin: 0 auto;
+        padding: 50px 25px;
+      }
+      li{
+        list-style: none;
+
+        margin: 0 0 100px;
+        font-size:30px
+      }
+
+      .fadeInUp {
+        opacity : 0;
+        transform: translateY(20px);
+        transition: 1s;
+      }
+  
+  /* <footer>のCSSを指定してください */
+  footer {
+    padding-top:300px;
+    background: -moz-linear-gradient(bottom, blanchedalmond, #FFF);
+    background: -webkit-linear-gradient(bottom,  blanchedalmond, #FFF);
+    background: linear-gradient(to top,  blanchedalmond, #FFF);
+  }
+  footer a{
+    padding-bottom: 500px;
+    margin-bottom: 50px;
+  }
+  #page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+#page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+/* メインコンテンツを左に寄せる*/
+.content{
+  width:60%;
+  float: left;
+}
+/* サブコンテンツを右に。*/
+#Beppu{
+  width: 30%;
+  padding-left: 40px;
+  float: right;
+  border: 1px 
+  solid #F0F0F0; 
+  height: 480px; 
+  overflow: auto;
+}
+/* clearfix */
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block;
+}
+
+tr{
+  text-align: center;
+  font-size: large;
+}
+table{
+  width: 75%;
+}

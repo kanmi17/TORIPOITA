@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 180px 100px;
+  background-position: -30%;
+  background-image:url(YUHU.jpg);
+  background-size:cover;
+  padding-top:180px;
+  padding-bottom:300px;
+  background-color:rgba(255,255,255,0.8);
+  background-blend-mode:lighten;
+  text-align: center;
+  text-align: center;
+/*ここからページ開いた瞬間にスライドイン*/
+    animation-name: SlideIn-Right;
+    animation-duration: 1s;
+}
+
+@keyframes SlideIn-Right{
+from {
+    opacity: 0;
+    transform: translateX(100px);
+}
+to {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+  }
+    /*ここまでページ開いた瞬間にスライドイン*/
+/*botton*/
+.btn-wrapper{
+    margin:20px;
+  }
+  
+.btn{
+  padding:8px 24px;
+  color:white;
+  display:inline-block;
+  opacity:0.8;
+  /* border-radiusを4pxに指定してください */
+  border-radius:4px;
+  text-decoration-line: none;
+}
+
+/* btnクラスにhoverしたときのCSSを指定してください */
+.btn:hover{
+  opacity:1;
+}
+/* oneクラスのCSSを指定してください */
+.one{
+  background-color:#239b76;
+}
+
+
+/* twoクラスのCSSを指定してください */
+.two{
+  background-color:#3b5998;
+}
+
+/* threeクラスのCSSを指定してください */
+.three{
+    background-color:#55acee;
+  }
+  @media (max-width:1000px){
+    @media (min-height:600px){
+      body{
+        position:fixed;
+        position: fixed;
+        left: 0px;
+        right: 0px;
+        top: 0px;
+        bottom:0px;
+        background-position: -30%;
+        background-image:none;
+        background-size:cover;
+        height:100%;
+        padding-bottom:150%;
+        margin-bottom: 50%;
+        background-color:rgba(8, 110, 141, 0.8);
+        background-blend-mode:lighten;
+        text-align: center;
+        font-weight: bold;
+      }
+      header{
+        display:none;
+        height:40px;
+        background-color:rgba(34, 49, 52, 0.9);
+      }
+    
+    .header-left{
+      display:none;
+        float: center;
+        text-align: center;
+        margin-top: 50px;
+        width:auto;
+        padding-top:30px;
+        transition: all 0.5s;
+        font-size: 25px;
+    }
+    .header-left a {
+      display:none;
+      line-height:45px;
+      padding-right:25px;
+      padding-left:25px;
+      color:white;
+      display:block;
+      font-style: bold;
+      text-decoration: none;
+    }
+
+    .wrapper h1{
+      font-size: 100px;
+    }
+    .wrapper p{
+      font-size: 50px;
+    }
+    .btn{
+      font-size: 70px;
+      margin:30px;
+      width: 50%;
+      text-align: center;
+    }
+  }
+  }

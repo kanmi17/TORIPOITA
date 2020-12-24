@@ -1,0 +1,139 @@
+body {
+    margin: 0;
+    text-align: center;
+    }
+    a {
+        text-decoration: none;
+      }
+    header{
+        height:55px;
+        background-color:rgba(34, 49, 52, 0.9);
+        top:0;
+      }
+    
+    .header-left{
+        float: left;
+        width:auto;
+        padding-top:10px;
+        transition: all 0.5s;
+    }
+    
+    .header-left a {
+        line-height:45px;
+        padding-right:25px;
+        padding-left:25px;
+        color:white;
+        display:block;
+        font-style: bold;
+        text-decoration: none;
+      }
+    
+    input{
+        display:inline;
+    }
+
+    .top-wrapper{
+        background-position: -30%;
+        background-image:url(YUHU.jpg);
+        background-size:cover;
+        background-color:rgba(255,255,255,0.8);
+        background-blend-mode:lighten;
+    padding: 180px 100px;
+             /*ここからページ開いた瞬間にフェードイン*/
+      animation-name: fadein;
+      animation-duration: 3s;
+  }
+  @keyframes fadein {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+  
+    }
+  /*botton*/
+  .btn-wrapper{
+      margin:20px;
+    }
+    
+  .btn{
+    padding:8px 24px;
+    color:white;
+    display:inline-block;
+    opacity:0.8;
+    /* border-radiusを4pxに指定してください */
+    border-radius:4px;
+    text-decoration-line: none;
+  }
+  
+  /* btnクラスにhoverしたときのCSSを指定してください */
+  .btn:hover{
+    opacity:1;
+  }
+  /* AirportクラスのCSSを指定してください */
+  .NEW{
+    background-color:#239b76;
+  }
+  
+  .start{
+    background-color: rgba(255, 0, 0, 0.459);
+  }
+  
+  /* facebookクラスのCSSを指定してください */
+  .login{
+    background-color:#3b5998;
+      margin-right:10px;
+  }
+ 
+    /*ここからスクロール＋フェードイン*/
+
+    .wrapper{
+        font-family: "ＭＳ 明朝";
+        margin: 0 auto;
+        padding: 50px 25px;
+        background: -moz-linear-gradient(top, blanchedalmond, #FFF);
+        background: -webkit-linear-gradient(top,  blanchedalmond, #FFF);
+        background: linear-gradient(to bottom,  blanchedalmond, #FFF);
+      }
+      li{
+        color: rgba(34, 49, 52);
+        list-style: none;
+        margin: 0 0 100px;
+        font-size:30px
+      }
+
+      .fadeInUp {
+        opacity : 0;
+        transform: translateY(20px);
+        transition: 1s;
+      }
+  
+  /* <footer>のCSSを指定してください */
+  footer {
+    padding-top:300px;
+
+  }
+  footer a{
+    padding-bottom: 500px;
+    margin-bottom: 50px;
+  }
+  #page_top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+}
+#page_top a {
+    background-color: #999;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    padding: 20px 20px;
+}
+#page_top a:hover {
+    background-color: #666;
+    text-decoration: none;
+}
+
